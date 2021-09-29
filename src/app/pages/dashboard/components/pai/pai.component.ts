@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaiComponent implements OnInit {
 
+  public tituloDoFormularioNoComponenteFilho: string = 'Titulo que esta no componente pai';
+
   public valorDoFormularioQueRecebiDoComponenteFilho: any;
 
   constructor() { }

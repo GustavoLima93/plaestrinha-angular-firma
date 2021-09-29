@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
@@ -8,6 +8,9 @@ import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
   styleUrls: ['./filho.component.scss']
 })
 export class FilhoComponent implements OnInit {
+
+  @Input()
+  public tituloDoFormulario: string;
 
   public form: FormGroup;
 
