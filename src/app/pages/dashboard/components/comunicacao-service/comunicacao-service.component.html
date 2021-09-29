@@ -1,0 +1,23 @@
+<div class="container-root">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col"># Pokedex</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Foto</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pokemon of pokemons">
+        <td>{{ pokemon.id }}</td>
+        <td>{{ pokemon.nome }}</td>
+        <td><img class="foto-pokemon" [src]="pokemon.img" [alt]="pokemon.nome"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="botoes-pagina">
+    <button (click)="anteriorPage()" type="button" class="btn btn-primary"> {{ '\<' }} Ant</button>
+    <button (click)="proxPage()" type="button" class="btn btn-secondary">Prox ></button>
+  </div>
+</div>
