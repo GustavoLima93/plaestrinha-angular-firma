@@ -1,0 +1,13 @@
+<div class="container-root">
+  <form [formGroup]="form">
+    <div class="col">
+      <label for="title" class="form-label">Title</label>
+      <input formControlName="title" type="text" class="form-control" id="title" aria-describedby="title">
+    </div>
+    <div class="col">
+      <label for="author" class="form-label">Author</label>
+      <input formControlName="author" type="text" class="form-control" id="author">
+    </div>
+    <button (click)="enviaFormulario()" type="submit" class="btn btn-primary mt-5">Submit</button>
+  </form>
+</div>

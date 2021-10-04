@@ -9,6 +9,11 @@ const routes: Routes = [
     .then((m) => m.DashboardModule )
   },
   {
+    path: 'crud',
+    loadChildren: () => import('./pages/crud/crud.module')
+    .then((m) => m.CrudModule )
+  },
+  {
     path: '',
     redirectTo: '/dashboard',
     pathMatch: 'full'

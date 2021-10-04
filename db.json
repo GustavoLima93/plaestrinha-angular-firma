@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "angular",
+      "author": "gustavo"
+    },
+    {
+      "title": "Ferias no guaruja",
+      "author": "mc da leste",
+      "id": 3
+    }
+  ]
+}
